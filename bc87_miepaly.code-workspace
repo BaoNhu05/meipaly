@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "bc87_miepaly",
+		"path": "."
+	},
+	{
+		"name": "slick",
+		"path": "../Users/admin/Downloads/slick-1.8.1/slick-1.8.1/slick"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "bc87_miepaly"
+  }
+}

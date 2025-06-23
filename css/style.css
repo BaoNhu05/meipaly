@@ -1,0 +1,215 @@
+/*Reset thuộc tính của thẻ, dấu * tượng trưng cho tất cả các thẻ
+*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+header {
+  /* padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px; */
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ffffff4a;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.brand {
+  text-decoration: none;
+  color: white;
+}
+.brand i,
+span {
+  font-size: 32px;
+}
+/* .brand span {
+  font-size: 32px;
+} */
+.menu ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 25px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+.menu ul li.active a {
+  color: red;
+}
+.menu ul li:hover a {
+  color: red;
+}
+#carousel {
+  background-image: url("./../img/home_slider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.carousel__content p {
+  font-size: 1.3rem;
+}
+.carousel__content h1 {
+  font-size: 4rem;
+}
+.carousel__content button {
+  background-color: #e62b4a;
+  border: 1px solid #e62b4a;
+  color: white;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.carousel__content button:hover {
+  background-color: #af2239;
+}
+.carousel__content .arrow-down {
+  margin-top: 2rem;
+}
+.py-5 {
+  padding: 5rem 0;
+}
+#servics {
+  background: black;
+  color: white;
+}
+.title {
+  text-align: center;
+}
+.title p:first-of-type {
+  color: #af2239;
+}
+.title h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.title p:last-of-type {
+  color: gray;
+}
+.servics__slider {
+  display: flex;
+}
+.servics__item {
+  background: white;
+  color: gray;
+  width: 214px;
+  height: 230px;
+  margin: 0 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+.servics__item::after {
+  content: "";
+  width: 5px;
+  height: 0;
+  background-color: #af2239;
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.servics__item:hover::after {
+  height: 100%;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+  color: white;
+}
+.text-gray {
+  color: gray !important;
+}
+.blog__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.blog__content p {
+  color: #d0c7c8;
+}
+.blog__content .blog__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(50%);
+}
+.blog__item-1 {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.blog__item-10 {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+}
+.blog__item {
+  position: relative;
+}
+/* overlay */
+.blog__item .overlay {
+  background: #ff000040;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.blog__item:hover .overlay {
+  opacity: 1;
+}
+.blog__item .overlay .overlay__icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.blog__item .overlay .overlay__icon i {
+  background-color: white;
+  padding: 0.5rem;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+.blog__item:hover .overlay .overlay__icon i {
+  transform: translateY(0);
+}
+.blog__item .overlay .overlay__icon i:hover {
+  background-color: black;
+  color: white;
+}
+.blog__item .overlay .overlay__text {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+.blog__item:hover .overlay .overlay__text {
+  transform: translateY(0);
+}
